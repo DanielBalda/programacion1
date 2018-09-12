@@ -57,6 +57,6 @@
         ?>
         </h1>
         <br><br>
-        <a  href=http://localhost/programacion1/TPs/index.php >Menu Trabajos Practicos <- </a>
+        <a  href=index.php >Menu Trabajos Practicos <- </a>
 </body>
 </html>

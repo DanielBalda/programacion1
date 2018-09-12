@@ -12,17 +12,14 @@
         echo "<pre>";
         echo "Arreglo 1\n";
             print_r($array);
-        echo "</pre>";
 
         echo "<br><br>b)";
         $asociativo['Nombre']="Daniel";
         $asociativo['Apellido']="Balda";
         $asociativo['Carrera']="Ing. Informatica";
         $asociativo['Legajo']="54041";
-        echo "<pre>";
         echo "Arreglo Asociativo<br>";
             print_r($asociativo);
-        echo "</pre>";
 
         echo "<br><br>c)";
         $array3d[0][1][1]="5";
@@ -31,23 +28,20 @@
         $array3d[0][2][4]="99.9";
         $array3d[1][3][1]="-24";
         $array3d[1][3][2]="-5";
-        echo "<pre>";
         echo "Arreglo Vectorial 3D<br>";
         print_r($array3d);
-        echo "</pre>";
 
         echo "<br><br>d)";
         $params2d['usuario']['Nombre']="Daniel";
         $params2d['usuario']['Apellido']="Balda";
         $params2d['universidad']['Carrera']="Ing. Informatica";
         $params2d['universidad']['Legajo']="54041";
-        echo "<pre>";
         echo "Arreglo Asociativo 2D<br>";
             print_r($params2d);
         echo "</pre>";
         ?>
         </h1>
         <br><br>
-        <a  href=http://localhost/programacion1/TPs/index.php >Menu Trabajos Practicos <- </a>
+        <a  href=index.php >Menu Trabajos Practicos <- </a>
 </body>
 </html>

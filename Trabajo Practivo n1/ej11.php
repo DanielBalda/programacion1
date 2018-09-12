@@ -2,6 +2,13 @@
 <head>
     <title>Ejercicio 11</title>
     <style type="text/css">
+        /* CENTRADO */
+        body {
+            background-color: #3e94ec;
+            max-width: 500px;
+            margin: auto;
+        }
+        /* FIN CENTRADO */
         table, td{
             border: 3px solid #000;
         }
@@ -15,7 +22,8 @@
 </head>
 <body>
 
-        <h1>Ejercicio 10
+        <h1>Ejercicio 11</h1>
+        <h3>
 
         <?php
         echo "<br><br>a)<br><br>";
@@ -47,7 +55,7 @@
             echo "</tr>";
         echo "</table>";
         ?>
-        </h1>
+        </h3>
         <br><br>
         <a  href=index.php >Menu Trabajos Practicos <- </a>
 </body>
