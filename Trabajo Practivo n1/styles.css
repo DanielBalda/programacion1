@@ -1,7 +1,7 @@
 body {
     background-color: #3e94ec;
-    position: absolute;
-    left: 40%;
+    max-width: 500px;
+    margin: auto;
 }
 
 h1{
