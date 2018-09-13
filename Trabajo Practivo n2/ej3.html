@@ -6,33 +6,51 @@
 
     <h1>Ejercicio 3</h1>
 
-    <form action="ej3.php" method="get">
+    <form action="ej3.php" method="get" enctype="multipart/form-data">
         <!-- Textbox -->
-        <input type="text" name="texto1"><br>
-        <input type="text" name="texto2"><br>
+        <div><label for="texto1">Texto 1:</label>
+            <input type="text" id="texto1" name="texto1">
+        </div><br>
+        <div><label for="texto2">Texto 2:</label>
+            <input type="text" id="texto2" name="texto2">
+        </div><br>
         <!-- Hidden -->
         <input type="hidden" name="oculto" value="secreto">
         <!-- Password -->
-        <input type="password" name="clave"><br>
+        <div><label for="password">Contrasena:</label>
+            <input type="password" id="password" name="clave">
+        </div><br>
         <!-- Checkbox -->
-        <input type="checkbox" name="check1">
-        <input type="checkbox" name="check2">
-        <input type="checkbox" name="check3"><br>
+        <div><label for="checks">Selecione:</label>
+            <input type="checkbox" id="checks" name="check1">
+            <input type="checkbox" name="check2">
+            <input type="checkbox" name="check3">
+        </div><br>
         <!-- Radio Grupo1 -->
-        <input type="radio" name="grupo1"  value="1">
-        <input type="radio" name="grupo1"  value="2">
-        <input type="radio" name="grupo1"  value="3"><br>
+        <div><label for="grupo1">Grupo 1:</label><br>
+            <fieldset id="grupo1" name="grupo1">
+                <input type="radio" name="radio1" value="1"><br>
+                <input type="radio" name="radio1" value="2"><br>
+                <input type="radio" name="radio1" value="3">
+            </fieldset>
+        </div><br>
         <!-- Radio Grupo2 -->
-        <input type="radio" name="grupo2" value="1">
-        <input type="radio" name="grupo2" value="2">
-        <input type="radio" name="grupo2" value="3"><br>
+        <div><label for="grupo2">Grupo 2:</label><br>
+            <fieldset id="grupo2" name="grupo2">
+                <input type="radio" name="radio2" value="1"><br>
+                <input type="radio" name="radio2" value="2"><br>
+                <input type="radio" name="radio2" value="3">
+            </fieldset>
+        </div><br>
         <!-- Lista Desplegable -->
-        <select name="lista">
-            <option name="opcion1">Opcion 1</option>
-            <option name="opcion2">Opcion 2</option>
-            <option name="opcion3">Opcion 3</option>
-            <option name="opcion4">Opcion 4</option>
-        </select><br>
+        <div><label for="lista">Lista: </label>
+            <select name="lista" id="lista">
+                <option name="opcion1">Opcion 1</option>
+                <option name="opcion2">Opcion 2</option>
+                <option name="opcion3">Opcion 3</option>
+                <option name="opcion4">Opcion 4</option>
+            </select>
+        </div><br>
         <input type="submit" name="enviar" value="Enviar">
         <input type="reset" value="Borrar">
     </form>

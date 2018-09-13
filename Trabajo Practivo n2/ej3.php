@@ -6,58 +6,38 @@ echo "Hidden: $_GET[oculto]<br>";
 echo "Password: $_GET[clave]<br>";
 
 echo "Checkbox 1: ";
-if (!isset($_GET['check1'])){
+if (empty($_GET['check1'])){
     echo "No seleccionado<br>";
 }else{
     echo "seleccionado<br>";
 }
 
 echo "Checkbox 2: ";
-if (!isset($_GET['check2'])){
+if (empty($_GET['check2'])){
     echo "No seleccionado<br>";
 }else{
     echo "seleccionado<br>";
 }
 
 echo "Checkbox 3: ";
-if (!isset($_GET['check3'])){
+if (empty($_GET['check3'])){
     echo "No seleccionado<br>";
 }else{
     echo "seleccionado<br>";
 }
 
 echo "Radio Grupo 1: ";
-if (isset($_GET['grupo1'])) {
-    switch ($_GET['grupo1']) {
-        case '1':
-            echo "Primer elemento seleccionado<br>";
-            break;
-        case '2':
-            echo "Segundo elemento seleccionado<br>";
-            break;
-        case '3':
-            echo "Tercer elemento seleccionado<br>";
-            break;
-    }
-}else{
+if (empty($_GET['radio1'])) {
     echo "No selecciono ningun elemento<br>";
+}else{
+    echo $_GET['radio1']."<br>";
 }
 
 echo "Radio Grupo 2: ";
-if (isset($_GET['grupo2'])) {
-    switch ($_GET['grupo2']) {
-        case '1':
-            echo "Primer elemento seleccionado<br>";
-            break;
-        case '2':
-            echo "Segundo elemento seleccionado<br>";
-            break;
-        case '3':
-            echo "Tercer elemento seleccionado<br>";
-            break;
-    }
-}else{
+if (empty($_GET['radio2'])) {
     echo "No selecciono ningun elemento<br>";
+}else{
+    echo $_GET['radio2']."<br>";
 }
 
 echo "Lista Desplegable: $_GET[lista]<br>";
