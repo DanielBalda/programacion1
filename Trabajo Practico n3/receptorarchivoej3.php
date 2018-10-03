@@ -1,6 +1,6 @@
 <?php
 function mostrar(){
-    $archivo = fopen($_FILES['archivo']['tmp_name'], "r");
+    $archivo = fopen('importados/'.$_FILES['archivo']['name'], "r");
     while ($linea = fgets($archivo)) {
         echo $linea . "<br>";
     }
