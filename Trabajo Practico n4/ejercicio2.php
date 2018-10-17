@@ -9,7 +9,6 @@ $conexion = new PDO("mysql:host=$servidor;dbname=$base",$usuario,$clave);
 $sql = 'SELECT * FROM persona';
 $ejecucionSQLPDO = $conexion->prepare($sql);
 $ejecucionSQLPDO->execute();
-echo "<pre>";
 while ($fila = $ejecucionSQLPDO->fetch(PDO::FETCH_ASSOC)){
     echo "<tr>";
     foreach ($fila as $valor){
