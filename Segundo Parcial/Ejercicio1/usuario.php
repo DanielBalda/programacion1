@@ -4,7 +4,7 @@
 </head>
 <body>
 <?php
-if(empty($_SESSION['login']) || $_SESSION['rol'] != "user"){
+if(empty($_SESSION['login'])){
     header('Location: inicio.html');
     exit;
 }

@@ -12,18 +12,21 @@ $usuario = "root";
 $clave = "";
 $base = "programacion1";
 $conexion = new PDO("mysql:host=$servidor;dbname=$base",$usuario,$clave);
-$sql = "SELECT * FROM usuario WHERE rol = :rol";
+$sql = "SELECT rol FROM usuario WHERE usuario='".$_SESSION['user']."'";
 $ejecucionSQLPDO = $conexion->prepare($sql);
 $ejecucionSQLPDO ->execute();
+$dato= $ejecucionSQLPDO->fetch(PDO::FETCH_ASSOC);
 
-echo $sql;
 if(empty($_SESSION['login'])){
     header('Location: inicio.html');
     exit;
 }else{
-
+    if ($dato['rol'] == 'usuario'){
+        header('location: usuario.php');
+    }else{
+        header('location: admin.php');
+    }
 }
-echo "El Usuario es: ".$_SESSION['user'];
 ?>
 </body>
 </html>
