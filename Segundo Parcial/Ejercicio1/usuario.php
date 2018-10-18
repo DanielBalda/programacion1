@@ -7,8 +7,13 @@
 if(empty($_SESSION['login'])){
     header('Location: inicio.html');
     exit;
+}else{
+    if($_SESSION['rol'] == 'usuario'){
+        echo "Usuario: ".$_SESSION['user'];
+    }else{
+        header('location: inicio.html');
+    }
 }
-echo "Usuario ".$_SESSION['user'];
 ?>
 </body>
 </html>

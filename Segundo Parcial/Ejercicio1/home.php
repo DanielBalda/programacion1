@@ -22,9 +22,12 @@ if(empty($_SESSION['login'])){
     exit;
 }else{
     if ($dato['rol'] == 'usuario'){
+        $_SESSION['rol']=$dato['rol'];
         header('location: usuario.php');
     }else{
+        $_SESSION['rol']=$dato['rol'];
         header('location: admin.php');
+
     }
 }
 ?>
